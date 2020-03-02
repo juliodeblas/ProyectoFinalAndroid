@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.FragmentUno"
+    android:background="@android:color/holo_red_light"
+    android:id="@+id/fondo">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blanco"
+        android:alpha="0.7"
+        android:layout_margin="10sp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edit_nombre_insertar"
+                android:layout_width="229dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_x="82dp"
+                android:layout_y="399dp"
+                android:hint="Introduce nombre"
+                android:layout_marginTop="30sp"/>
+
+            <EditText
+                android:id="@+id/edit_apellidos_insertar"
+                android:layout_width="229dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_x="82dp"
+                android:layout_y="450dp"
+                android:hint="Introduce apellidos"
+                android:layout_marginTop="90sp"/>
+
+            <EditText
+                android:id="@+id/edit_email_insertar"
+                android:layout_width="229dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="150sp"
+                android:layout_x="82dp"
+                android:layout_y="399dp"
+                android:hint="Introduce email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/edit_password_insertar"
+                android:layout_width="229dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_x="81dp"
+                android:layout_y="480dp"
+                android:hint="Introduce contraseña"
+                android:inputType="textPassword"
+                android:layout_marginTop="210sp"/>
+
+            <EditText
+                android:id="@+id/edit_password1_insertar"
+                android:layout_width="229dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_x="81dp"
+                android:layout_y="480dp"
+                android:hint="Confirmar contraseña"
+                android:inputType="textPassword"
+                android:layout_marginTop="270sp"/>
+
+            <EditText
+                android:id="@+id/edit_edad_insertar"
+                android:layout_width="229dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_x="81dp"
+                android:layout_y="480dp"
+                android:hint="Introduce edad"
+                android:inputType="number"
+                android:layout_marginTop="330sp"/>
+
+            <RadioGroup
+                android:id="@+id/radio_group_insertar"
+                android:layout_width="229dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:orientation="horizontal"
+                android:layout_marginTop="390sp">
+
+                <RadioButton
+                    android:id="@+id/radio_hombre_insertar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hombre"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radio_mujer_insertar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:text="Mujer"></RadioButton>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/boton_registrarme_insertar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_margin="30dp"
+                android:layout_x="215dp"
+                android:layout_y="572dp"
+                android:text="Registrarme" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

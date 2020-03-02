@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ThirdActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.7"
+            android:src="@drawable/blanco"></ImageView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp">
+
+            <EditText
+                android:id="@+id/edit_nombre"
+                android:layout_width="229dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="20dp"
+                android:layout_x="82dp"
+                android:layout_y="399dp"
+                android:hint="Introduce nombre" />
+
+            <EditText
+                android:id="@+id/edit_apellidos"
+                android:layout_width="229dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="80dp"
+                android:layout_x="82dp"
+                android:layout_y="450dp"
+                android:hint="Introduce apellidos" />
+
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="229dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="160dp"
+                android:layout_x="82dp"
+                android:layout_y="399dp"
+                android:hint="Introduce email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/edit_password"
+                android:layout_width="229dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="230dp"
+                android:layout_x="81dp"
+                android:layout_y="480dp"
+                android:hint="Introduce contraseña"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/edit_password1"
+                android:layout_width="229dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="300dp"
+                android:layout_x="81dp"
+                android:layout_y="480dp"
+                android:hint="Confirmar contraseña"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/edit_edad"
+                android:layout_width="229dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="360dp"
+                android:layout_x="81dp"
+                android:layout_y="480dp"
+                android:hint="Introduce edad"
+                android:inputType="number" />
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="229dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="430dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_hombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hombre"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radio_mujer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mujer"
+                    android:layout_marginLeft="20dp"></RadioButton>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/boton_volver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_marginTop="40dp"
+                android:layout_margin="30dp"
+                android:layout_x="80dp"
+                android:layout_y="572dp"
+                android:text="Volver" />
+
+            <Button
+                android:id="@+id/boton_registrarme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="30dp"
+                android:layout_x="215dp"
+                android:layout_y="572dp"
+                android:text="Registrarme" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

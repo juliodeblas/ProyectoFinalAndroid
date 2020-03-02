@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/blanco"
+            android:alpha="0.7"></ImageView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp">
+
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="229dp"
+                android:layout_height="wrap_content"
+                android:layout_x="82dp"
+                android:layout_y="399dp"
+                android:inputType="textEmailAddress"
+                android:hint="Introduce email"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/edit_password"
+                android:layout_width="229dp"
+                android:layout_height="wrap_content"
+                android:layout_x="81dp"
+                android:layout_y="480dp"
+                android:hint="Introduce contraseña"
+                android:inputType="textPassword"
+                android:layout_gravity="center"
+                android:layout_marginTop="90dp"/>
+
+            <Button
+                android:id="@+id/button_iniciar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="80dp"
+                android:layout_y="572dp"
+                android:text="Iniciar sesión"
+                android:layout_gravity="bottom|start"
+                android:layout_margin="30dp"/>
+
+            <Button
+                android:id="@+id/button_registrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="215dp"
+                android:layout_y="572dp"
+                android:text="Registrarme"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="30dp"/>
+
+            <ImageView
+                android:layout_width="230dp"
+                android:layout_height="228dp"
+                android:src="@drawable/users"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="30dp"></ImageView>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

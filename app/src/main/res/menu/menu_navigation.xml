@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Opciones">
+
+        <menu>
+            <item
+                android:icon="@drawable/insertar"
+                android:title="Insertar"
+                android:id="@+id/insertar"/>
+            <item
+                android:icon="@drawable/eliminar"
+                android:title="Eliminar"
+                android:id="@+id/eliminar"/>/>
+            <item
+                android:icon="@drawable/mostrar"
+                android:title="Mostrar datos"
+                android:id="@+id/mostrar"/> />
+        </menu>
+
+    </item>
+</menu>
