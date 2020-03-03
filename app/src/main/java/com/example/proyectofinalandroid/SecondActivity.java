@@ -45,11 +45,24 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
         instancias();
         iniciarPager();
+        personalizarHeader();
         acciones();
     }
 
-    private void personalizarPestanias(){
-        for (int i=0;i<=0;i++){
+    private void personalizarHeader() {
+        Bundle bundle = this.getIntent().getExtras();
+        String nombre_recuperado = bundle.getString("nombre");
+        String sexo_recuperado = bundle.getString("sexo");
+        textView.setText(nombre_recuperado);
+        if (sexo_recuperado.equals("hombre")) {
+            imageView.setImageResource(R.drawable.hombre);
+        } else {
+            imageView.setImageResource(R.drawable.mujer);
+        }
+    }
+
+    private void personalizarPestanias() {
+        for (int i = 0; i <= 0; i++) {
             Fragment fragment = adaptadorFragments.getItem(i);
             System.out.println(fragment.getClass().getSimpleName());
             System.out.println(fragment.getView().getScrollX());
@@ -71,7 +84,7 @@ public class SecondActivity extends AppCompatActivity {
 
             @Override
             public void onPageSelected(int position) {
-                Log.v("scroll",String.valueOf(position));
+                Log.v("scroll", String.valueOf(position));
                 Fragment fragment = adaptadorFragments.getItem(position);
                 Drawable drawable = fragment.getView().findViewById(R.id.fondo).getBackground();
                 tabLayout.setBackground(drawable);
@@ -89,14 +102,16 @@ public class SecondActivity extends AppCompatActivity {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
+                switch (item.getItemId()) {
                     case R.id.insertar:
                         viewPager.setCurrentItem(0);
                         break;
                     case R.id.eliminar:
-                        viewPager.setCurrentItem(1);                        break;
+                        viewPager.setCurrentItem(1);
+                        break;
                     case R.id.mostrar:
-                        viewPager.setCurrentItem(2);                        break;
+                        viewPager.setCurrentItem(2);
+                        break;
                 }
                 drawerLayout.closeDrawers();
                 return true;
@@ -111,7 +126,7 @@ public class SecondActivity extends AppCompatActivity {
         listaFragments.add(new FragmentUno());
         listaFragments.add(new FragmentDos());
         listaFragments.add(new FragmentTres());
-        adaptadorFragments = new AdaptadorFragments(getSupportFragmentManager(),0,listaFragments);
+        adaptadorFragments = new AdaptadorFragments(getSupportFragmentManager(), 0, listaFragments);
         viewPager.setAdapter(adaptadorFragments);
     }
 

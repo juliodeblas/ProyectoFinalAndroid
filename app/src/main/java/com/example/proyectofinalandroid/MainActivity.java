@@ -55,13 +55,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     do {
                         int i = cursor.getColumnIndex(EsquemaBD.EsquemaPersona.TAG_EMAIL);
                         int j = cursor.getColumnIndex(EsquemaBD.EsquemaPersona.TAG_PASSWORD);
-                        if(cursor.getString(i).equals(email) && cursor.getString(j).equals(password)){
+                        int k = cursor.getColumnIndex(EsquemaBD.EsquemaPersona.TAG_SEXO);
+                        int h = cursor.getColumnIndex(EsquemaBD.EsquemaPersona.TAG_NOMBRE);
+                        String nombre = cursor.getString(h);
+                        String sexo = cursor.getString(k);
+                        if (cursor.getString(i).equals(email) && cursor.getString(j).equals(password)) {
                             Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
+                            intent.putExtra("nombre", nombre);
+                            intent.putExtra("sexo", sexo);
                             startActivity(intent);
-                        }else{
+                        } else {
                             System.out.println("error");
                         }
-                    }while ((cursor.moveToNext()));
+                    } while ((cursor.moveToNext()));
                 }
 
                 break;
